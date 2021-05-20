@@ -1,0 +1,18 @@
+img {
+    pointer-events: none;
+}
+
+.pc-none{
+    display: none;
+}
+
+@media screen and (max-width: 720px) {
+    /* 1024pxまでの幅の場合に適応される */
+        .sp-none{
+            display: none;
+        }
+
+        .pc-none{
+            display: block;
+        }
+}
