@@ -1,18 +1,58 @@
-img {
-    pointer-events: none;
+body {
+    font-family:Hiragino Maru Gothic ProN;
+    background-color: #E7E7EB;
 }
 
-.pc-none{
+.pc-none {
     display: none;
 }
 
+.sp-none {
+    display: block;
+}
+
+section {
+    text-align: center;
+}
+
+p {
+    color: #707070;
+}
+
+.header {
+    height: calc(100vh/1.2);
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.logo {
+    pointer-events: none;
+    width: 600px;
+}
+
+
 @media screen and (max-width: 720px) {
     /* 1024pxまでの幅の場合に適応される */
-        .sp-none{
-            display: none;
-        }
+    .pc-none {
+        display: block;
+    }
+    
+    .sp-none {
+        display: none;
+    }
 
-        .pc-none{
-            display: block;
-        }
+    p {
+        font-size: 12px;
+        text-align: left;
+    }
+
+    .logo {
+        width: 240px;
+    }
+
+    .footer {
+        margin: 0 auto;
+        width: 266px;
+    }
 }
